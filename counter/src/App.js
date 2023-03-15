@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import './App.css'
 import Contador from './Componentes/Contador';
 import Cabecalho from './Componentes/Cabecalho';
+import { ContadorProvider } from './ContadorContexto';
 
 
 function App(){
   return (
     <div>
-      <Cabecalho></Cabecalho>
-      <Contador></Contador>
+      <ContadorProvider>
+        <Cabecalho></Cabecalho>
+        <Contador></Contador>
+      </ContadorProvider>
     </div>
   )
 }

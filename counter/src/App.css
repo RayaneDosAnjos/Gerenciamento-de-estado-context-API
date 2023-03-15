@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+.container{
+  
+  justify-content: center;
+  align-items: center;
+
+}
+
 .cabecalho{
   display: flex;
   justify-content: space-between;
